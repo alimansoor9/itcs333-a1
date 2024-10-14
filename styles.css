@@ -1,83 +1,66 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #fefae0; /* Soft background color */
+body{
+font-family: Arial, sans-serif;
+background-color: #fef9c3; /* Soft yellow background /
+color:#333; / Dark text for readability /
+margin: 0;
+padding: 0;
 }
-
-/* Header Styles */
-header {
-    background-color: #f9c74f; /* Bright yellow */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
 nav ul {
-    list-style-type: none;
-    padding: 0;
+display: flex;
+justify-content: space-around;
+END
+list-style-type: none;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
 }
-
+}
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
+color: white;
+background-color: #ffcc00;}
+padding: 10px;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #f9844a; /* Orange hover effect */
+background-color: #ff9900;
 }
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 20px 0;
-    padding: 15px;
-    border: 2px solid #f9c74f;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-/* Gallery Styles */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.gallery img {
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f9c74f;
-    color: #fff;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-    
-    .gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+<section id=\\\"schedule\\\">
+<h2>Weekly Schedule</h2>
+<table>
+<tr>
+<th>Day</th>
+<th>Activity</th>
+</tr>
+<tr>
+<td>Monday</td>
+<td>Story Time</td>
+</tr>
+<!-- More rows for other days -->
+</table>
+</section>
+<section id="gallery">
+<h2>Class Activities</h2>
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<img src="smiley.gif" alt="Smiley face" width="42" height="42" style="float:left">
+</section>
+section id="resources"
+<h2>Parent Resources</h2>
+<ul>
+<li>Child Development Tips
+<li>School Policies
+</ul>
+</section>
+<section id="teacher">
+<h2>Teacher Bio</h2>
+<img src="https://placekitten.com/150/150" alt="Photo of Teacher">
+<p>Hi, my name is Ms. Johnson, and I absolutely love teaching kindergarten! For the last 10 years, I have been blessed with the opportunity to nurture little minds by means of play and discovery.</p>
+</section>
+<!-- Welcome Message Section -->
+<section id="welcome">
+<h2>Welcome to Sunshine Kindergarten!</h2>
+<p>We are glad you are here!</p>
+</section>
